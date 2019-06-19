@@ -13,8 +13,6 @@ tasks:
               echo "Set bash files to runable"         &>>  /workspace/magenta/logs/gitpod-install-log.txt                  &&                 
               chmod +x a01-magenta.sh                                                                                       && 
   
-              export PATH=/home/gitpod/workspace/.pip-global/bin:$PATH                                                      &&
-              export PIP_INSTALL_OPTION="--install-scripts=/workspace/.pip-global/bin"                                      &&
           
               echo "Starting Apache"                   &>>  /workspace/magenta/logs/gitpod-install-log.txt                  &&   
               apachectl start                                                                                               &&
