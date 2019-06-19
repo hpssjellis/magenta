@@ -1,3 +1,25 @@
+Gitpod features by Jeremy Ellis, June 18th, 2019 Twitter @rocksetta
+
+Repository https://github.com/hpssjellis/magenta
+
+Gitpod load  https://gitpod.io/#github.com/hpssjellis/magenta
+
+Ready made snapshot [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#snapshot/d5118800-9f44-42e8-a7e7-79be7c84d0c2)
+
+
+To use gitpod I added these files:
+
+public/index.html
+.gitpod.yml
+Dockerfile
+a01-magenta.sh
+
+
+setup run
+./a01-magenta.sh
+
+
+
 
 <img src="magenta-logo-bg.png" height="75">
 
