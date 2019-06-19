@@ -12,11 +12,11 @@ tasks:
               echo "Starting .gitpod.yml installation" &>>  /workspace/my-gitpod-capacitor/logs/gitpod-install-log.txt      &&  
               
               echo "Set bash files to runable"         &>>  /workspace/my-gitpod-capacitor/logs/gitpod-install-log.txt      &&                 
-              chmod +x a01-magenta.sh                                                                                &&     
+              chmod +x a01-magenta.sh                                                                                       &&     
               
-             
-              
-                
+              git clone https://github.com/tensorflow/magenta-demos.git                                                     &&
+              git clone https://github.com/googlecreativelab/aiexperiments-ai-duet.git                                      &&
+              git clone https://github.com/chrisdonahue/piano-genie-research-demo.git                                       &&
              
 
           
