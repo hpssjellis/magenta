@@ -5,29 +5,29 @@ ports:
   - port: 8001
   
 tasks:
-  -  command: mkdir /workspace/my-gitpod-capacitor/logs                              &&
-              touch /workspace/my-gitpod-capacitor/logs/gitpod-install-log.txt       &&
+  -  command: mkdir /workspace/magenta/logs                              &&
+              touch /workspace/magenta/logs/gitpod-install-log.txt       &&
        
        
-              echo "Starting .gitpod.yml installation" &>>  /workspace/my-gitpod-capacitor/logs/gitpod-install-log.txt      &&  
+              echo "Starting .gitpod.yml installation" &>>  /workspace/magenta/logs/gitpod-install-log.txt                  &&              
+              echo "Set bash files to runable"         &>>  /workspace/magenta/logs/gitpod-install-log.txt                  &&                 
+              chmod +x a01-magenta.sh                                                                                       && 
               
-              echo "Set bash files to runable"         &>>  /workspace/my-gitpod-capacitor/logs/gitpod-install-log.txt      &&                 
-              chmod +x a01-magenta.sh                                                                                       &&     
-              
+              cd /home/gitpod/workspace/magenta                                                                             &&
               git clone https://github.com/tensorflow/magenta-demos.git                                                     &&
               git clone https://github.com/googlecreativelab/aiexperiments-ai-duet.git                                      &&
               git clone https://github.com/chrisdonahue/piano-genie-research-demo.git                                       &&
              
 
           
-              echo "Starting Apache"                   &>>  /workspace/my-gitpod-capacitor/logs/gitpod-install-log.txt      &&   
+              echo "Starting Apache"                   &>>  /workspace/magenta/logs/gitpod-install-log.txt                  &&   
               apachectl start                                                                                               &&
               gp await-port 8001                                                                                            && 
               gp preview $(gp url 8001)                                                                                     &&
               
               
               
-              echo "Ending .gitpod.yml installation"  &>>   /workspace/my-gitpod-capacitor/logs/gitpod-install-log.txt    
+              echo "Ending .gitpod.yml installation"  &>>   /workspace/magenta/logs/gitpod-install-log.txt    
               
               
      
