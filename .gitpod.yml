@@ -13,10 +13,9 @@ tasks:
               echo "Set bash files to runable"         &>>  /workspace/magenta/logs/gitpod-install-log.txt                  &&                 
               chmod +x a01-magenta.sh                                                                                       && 
               
-              cd /home/gitpod/workspace/magenta                                                                             &&
-              git clone https://github.com/tensorflow/magenta-demos.git                                                     &&
-              git clone https://github.com/googlecreativelab/aiexperiments-ai-duet.git                                      &&
-              git clone https://github.com/chrisdonahue/piano-genie-research-demo.git                                       &&
+              git clone https://github.com/tensorflow/magenta-demos.git  /home/gitpod/workspace/magenta/demos                   &&
+    git clone https://github.com/googlecreativelab/aiexperiments-ai-duet.git   /home/gitpod/workspace/magenta/demos/ai-duet     &&
+git clone https://github.com/chrisdonahue/piano-genie-research-demo.git    /home/gitpod/workspace/magenta/demos/piano-genie-js  &&
              
 
           
